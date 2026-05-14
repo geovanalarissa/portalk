@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap");
 
-/* ---- Reset e Base ---- */
 *,
 *::before,
 *::after {
@@ -36,12 +35,16 @@ body {
 }
 
 header {
- background-color: #2563a8;
+ background-color:#1a3a6b;
  color: white;
  padding: 20px 40px;
  display: flex;
  justify-content: space-between;
  align-items: center;
+}
+
+.navegacao {
+display: flex;
 }
 
 .logo {
@@ -93,164 +96,38 @@ nav a {
  width: 350px;
 }
 
-
 section {
  padding: 20px;
 }
 
 .cards {
- display: flex;
- gap: 25px;
- flex-wrap: wrap;
- justify-content: center;
- margin: 30px 0;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
 }
+
 
 .card {
- width: 160px;
- height: 170px;
- border-radius: 20px;
- padding: 20px;
- text-align: center;
- box-shadow: 0 5px 10px rgba(0,0,0,0.15);
- transition: 0.3s;
- display: flex;
- flex-direction: column;
- justify-content: center;
+    background-color: #2563a8;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
 }
 
-.card:hover {
- transform: translateY(-8px);
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
 }
 
-.card.azul {
- background: #6f91bf;
- color: white;
+.titulo-centro {
+text-align: center;
 }
 
-.card.bege {
- background: #f3efe5;
- color: #1f2937;
-}
-
-.card img {
- width: 55px;
- margin: 0 auto 15px;
-}
-
-.card h3 {
- font-size: 18px;
- margin-bottom: 8px;
-}
-
-.card p {
- font-size: 14px;
-}
-
-.card:hover {
- transform: scale(1.05);
-}
-
-.cards-extras {
- display: flex;
- gap: 30px;
- justify-content: center;
- margin: 40px 0;
- flex-wrap: wrap;
-}
-
-.extra {
- width: 250px;
- height: 120px;
- border-radius: 25px;
- padding: 25px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- box-shadow: 0 5px 10px rgba(0,0,0,0.15);
- transition: 0.3s;
-}
-
-.extra:hover {
- transform: translateY(-8px);
-}
-
-.extra.azul {
- background: #6f91bf;
- color: white;
-}
-
-.extra.bege {
- background: #f3efe5;
- color: #1f2937;
-}
-
-.extra h3 {
- font-size: 22px;
- margin-bottom: 10px;
-}
-
-.extra p {
- font-size: 18px;
-}
-
-.menu {
- list-style: none;
- padding: 0;
-}
-
-.menu li {
- display: inline;
- margin-right: 20px;
-}
-
-.banner {
- background-color: #ffffff; /* Cor da seção de banner */
- text-align: center;
- padding: 50px 0;
-}
-
-.cards {
- display: flex;
- justify-content: space-around;
- padding: 20px;
-}
-
-.card {
- border: 1px solid #e7f3fe;
- padding: 20px;
- width: 30%;
- text-align: center;
-}
-
-.chatbot {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 60px;
- flex-wrap: wrap;
-}
-
-.texto-chatbot {
- max-width: 400px;
-}
-
-.texto-chatbot h2 {
- font-size: 32px;
- margin-bottom: 20px;
-}
-
-.texto-chatbot p {
- margin-bottom: 20px;
-}
-
-.texto-chatbot button {
- background: #6f91bf;
- color: white;
- border: none;
- padding: 12px 25px;
- border-radius: 12px;
-}
 .celular {
  display: flex;
  justify-content: space-around;
@@ -259,7 +136,7 @@ section {
  flex-wrap: wrap;
 }
 
-.celular img {
+.celular-chatbot {
  width: 350px;
 }
 
