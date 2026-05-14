@@ -1,4 +1,278 @@
-*{
-   font-family: "Freeman", sans-serif; /*essa é uma das fontes que o site tem, falta a fonte Amarente que ja esta baixada. falta designar para o lugar certo*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap");
+
+/* ---- Reset e Base ---- */
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
+:root {
+ --azul-escuro: #1a3a6b;
+ --azul-medio: #2563a8;
+ --azul-claro: #3b82d4;
+ --azul-hover: #1e50a0;
+ --amarelo: #f5c518;
+ --amarelo-claro: #fde68a;
+ --branco: #ffffff;
+ --cinza-claro: #f3f4f6;
+ --cinza-borda: #d1d5db;
+ --cinza-texto: #6b7280;
+ --texto-escuro: #1f2937;
+ --verde: #16a34a;
+ --bege: #f5f0e8;
+ --font-principal: "Poppins", sans-serif;
+ --font-corpo: "Open Sans", sans-serif;
+ --sombra-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+ --radius-card: 12px;
+ --radius-btn: 8px;
+}
+body {
+ font-family: var(--font-principal), var(--font-corpo);
+ margin: 0;
+ padding: 0;
+}
+
+header {
+ background-color: #2563a8;
+ color: white;
+ padding: 20px 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+}
+
+.logo h1 {
+ font-size: 42px;
+ font-weight: bold;
+ margin: 0;
+}
+
+.logo img {
+ width: 55px;
+ height: auto;
+}
+
+nav a {
+ margin: 10px;
+ color: Black;
+ text-decoration: none;
+}
+
+.home {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 60px 80px;
+}
+
+.texto-home {
+ max-width: 400px;
+}
+
+.texto-home h2 {
+ font-size: 32px;
+ color: #1a3a6b;
+ margin-bottom: 20px;
+}
+
+.texto-home p {
+ font-size: 18px;
+ line-height: 1.6;
+}
+
+.img-home img {
+ width: 350px;
+}
+
+
+section {
+ padding: 20px;
+}
+
+.cards {
+ display: flex;
+ gap: 25px;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin: 30px 0;
+}
+
+.card {
+ width: 160px;
+ height: 170px;
+ border-radius: 20px;
+ padding: 20px;
+ text-align: center;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+ transition: 0.3s;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.card:hover {
+ transform: translateY(-8px);
+}
+
+.card.azul {
+ background: #6f91bf;
+ color: white;
+}
+
+.card.bege {
+ background: #f3efe5;
+ color: #1f2937;
+}
+
+.card img {
+ width: 55px;
+ margin: 0 auto 15px;
+}
+
+.card h3 {
+ font-size: 18px;
+ margin-bottom: 8px;
+}
+
+.card p {
+ font-size: 14px;
+}
+
+.card:hover {
+ transform: scale(1.05);
+}
+
+.cards-extras {
+ display: flex;
+ gap: 30px;
+ justify-content: center;
+ margin: 40px 0;
+ flex-wrap: wrap;
+}
+
+.extra {
+ width: 250px;
+ height: 120px;
+ border-radius: 25px;
+ padding: 25px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+ transition: 0.3s;
+}
+
+.extra:hover {
+ transform: translateY(-8px);
+}
+
+.extra.azul {
+ background: #6f91bf;
+ color: white;
+}
+
+.extra.bege {
+ background: #f3efe5;
+ color: #1f2937;
+}
+
+.extra h3 {
+ font-size: 22px;
+ margin-bottom: 10px;
+}
+
+.extra p {
+ font-size: 18px;
+}
+
+.menu {
+ list-style: none;
+ padding: 0;
+}
+
+.menu li {
+ display: inline;
+ margin-right: 20px;
+}
+
+.banner {
+ background-color: #ffffff; /* Cor da seção de banner */
+ text-align: center;
+ padding: 50px 0;
+}
+
+.cards {
+ display: flex;
+ justify-content: space-around;
+ padding: 20px;
+}
+
+.card {
+ border: 1px solid #e7f3fe;
+ padding: 20px;
+ width: 30%;
+ text-align: center;
+}
+
+.chatbot {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 60px;
+ flex-wrap: wrap;
+}
+
+.texto-chatbot {
+ max-width: 400px;
+}
+
+.texto-chatbot h2 {
+ font-size: 32px;
+ margin-bottom: 20px;
+}
+
+.texto-chatbot p {
+ margin-bottom: 20px;
+}
+
+.texto-chatbot button {
+ background: #6f91bf;
+ color: white;
+ border: none;
+ padding: 12px 25px;
+ border-radius: 12px;
+}
+.celular {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 60px;
+ flex-wrap: wrap;
+}
+
+.celular img {
+ width: 350px;
+}
+
+footer {
+ background: #f3efe5;
+ padding: 30px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.redes i {
+ font-size: 24px;
+ margin-left: 20px;
+ cursor: pointer;
+}
