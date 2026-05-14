@@ -64,32 +64,9 @@ display: flex;
  height: auto;
 }
 
-nav a {
- margin: 10px;
- color: Black;
- text-decoration: none;
-}
-
-.home {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 60px 80px;
-}
 
 .texto-home {
  max-width: 400px;
-}
-
-.texto-home h2 {
- font-size: 32px;
- color: #1a3a6b;
- margin-bottom: 20px;
-}
-
-.texto-home p {
- font-size: 18px;
- line-height: 1.6;
 }
 
 .img-home img {
@@ -127,6 +104,14 @@ section {
 .titulo-centro {
 text-align: center;
 }
+
+.chamada { 
+ display: flex;
+ align-items: center; 
+ gap: 10px; 
+}
+
+.chamada h3 { margin: 0px; }
 
 .celular {
  display: flex;
