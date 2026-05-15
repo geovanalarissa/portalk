@@ -7,151 +7,234 @@
     <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-
+ 
 <header>
-    <h1>PORTALTAK</h1> <img src="">
-      <a href="#"> Início </a> 
-      <a href="#"> Sobre </a> 
-      <a href="#"> Contato </a> 
+    <h1>PORTALTAK</h1> <img src="simbolo-livro.png">
+      <a href="#inicio"> Início </a> 
+      <a href="#sobre"> Sobre </a> 
+      <a href="#contato"> Contato </a> 
 </header>
-
-    <h2>Pare de adiar. Comece a aprender!<h2>
-    <p>Nosso site contém assistente virtual educacional inspirada na Amazônia, criada para ajudar estudantes do ensino médio de forma leve e interativa.</p> <br> <br>
-
-    <h3 class="titulo-centro">Língua Portuguesa</h3>
-
-    <div class="cards">
-
-    <div class="card">
-        <h4>Simbolismo</h4>
-        <div class="item">
-            <input type="checkbox">
-            <p>aulas 5</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <h4>Parnasianismo</h4>
-        <div class="item">
-            <input type="checkbox">
-            <p>aulas 4</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <h4>Vanguardas</h4>
-        <div class="item">
-            <input type="checkbox">
-            <p>aulas 3</p>
-        </div>
-    </div>
-
-</div>
-
-    <h4 class="titulo-centro"> Língua Inglesa </h4>
-
-<div class="cards">
-
-    <div class="card">
-        <h4>Verbo To Be</h4>
-        <div class="item">
-            <input type="checkbox">
-            <p> aulas 7 </p>
-        </div>
+ 
+<section id="inicio" class="inicio">
+    <div class="inicio-texto"> 
+        <h2>Pare de adiar. Comece a aprender!</h2>
     
+        <p>Nosso site contém assistente virtual educacional inspirada na Amazônia, <br>
+        criada para ajudar estudantes do ensino médio de forma leve e interativa e <br> 
+        objetivando na maior compreensão e revisão dos conteúdos da lingua portuguesa e inglesa.
+    </p> <br><br>
     </div>
 
-    <div class="card">
-        <h4>Simple Past</h4>
-        <div class="item">
-             <input type="checkbox">
-             <p>aulas 4</p>
-        </div>
-
+    <div class="img-inicio"> 
+        <img src="corujas-inicio.png">
     </div>
-
-        <div class="card">
-        <h4>Simple Present</h4>
-        <div class="item">
-             <input type="checkbox">
-             <p>aulas 3</p>
-        </div>
-
-    </div>
-</div> <br><br>
-
-
-<div class="cards">
-    <div class="card">
-        <h3>Exercícios</h3>
-        <div class="item">
-         <p>0/200</p>
-        </div>
-    </div>
-
-    <div class="card">
-    <h3>Simulados</h3>
-    <div class="item">
-        <p>0/13</p>
-    </div>
+ 
+</section>
     
-</div>
-    
-<main>
-    <section class="sobre-chatbot">
-        <div class="txt-sobre-chatbot">
-            <h1 class="titulo-section">Olá! Eu sou a Arar.IA
-            <br>vamos aprender algo 
-            <br>novo hoje?
-            </h1>
-
-            <h3>Domine inglês e português 
-            <br>com nosso chatbot mascote
-            </h3>
-
-            <a id="login/cadastro"> Comece a estudar, é dinâmico! </a>
-
-            <div class="img-sobre">
-                <img src="img/arara-do-convite.png" alt="Imagem sobre o chatbot">
-            </div>    
-        </div>
-    </section>
-
-    <section class="parte2-sobre-chatbot">
-        <div class="txt-Parte2-Sobre-Chatbot">
-
-            <a href="#">
-                <button class="botao-redondo">
-                <img src="img/Arar.IA.png" alt="Imagem da Arar.Ia" class="imagem-ararIA">
-                </button>
-            </a>
-
-            <h1>Curiosa e inteligente, a Arar.IA 
-            <br>te guia como o vento na 
-            <br>floresta.
-            </h1>
-            <h3>Confira, é só clicar!</h3>
-            <div class="celular-chatbot">
-            <img src="celular-chatbot.png" alt="imagem do chatbot celular">
+    <h2 class="titulo-centro">Língua Portuguesa:</h2>
+ 
+    <section class="cards-section">
+        <div class="cards">
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-portugues.png" alt="ícone livro">
+                    </div>
+                    <h4>Simbolismo</h4>
+                    <span class="badge">aulas 5</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-simbolismo">
+                    <label for="cb-simbolismo">aula concluída</label>
+                </div>
             </div>
-
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-portugues.png" alt="ícone livro">
+                    </div>
+                    <h4>Parnasianismo</h4>
+                    <span class="badge">aulas 4</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-parnasianismo">
+                    <label for="cb-parnasianismo">aula concluída</label>
+                </div>
+            </div>
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-portugues.png" alt="ícone livro">
+                    </div>
+                    <h4>Vanguardas</h4>
+                    <span class="badge">aulas 3</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-vanguardas">
+                    <label for="cb-vanguardas">aula concluída</label>
+                </div>
+            </div>
+ 
         </div>
     </section>
+ 
+    <h2 class="titulo-centro"> Língua Inglesa: </h2>
+ 
+    <section class="cards-section">
+        <div class="cards">
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-ingles.png" alt="ícone livro">
+                    </div>
+                    <h4>Verbo To Be</h4>
+                    <span class="badge">aulas 7</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-tobe">
+                    <label for="cb-tobe">aula concluída</label>
+                </div>
+            </div>
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-ingles.png" alt="ícone livro">
+                    </div>
+                    <h4>Simple Past</h4>
+                    <span class="badge">aulas 4</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-simplepast">
+                    <label for="cb-simplepast">aula concluída</label>
+                </div>
+            </div>
+ 
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="livro-ingles.png" alt="ícone livro">
+                    </div>
+                    <h4>Simple Present</h4>
+                    <span class="badge">aulas 3</span>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="cb-simplepresent">
+                    <label for="cb-simplepresent">aula concluída</label>
+                </div>
+            </div>
+ 
+        </div> 
+    </section>
+ 
+    <section class="cards-section"> 
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                     <img src="livro-aberto.png" alt="ícone">
+                </div>
+                <h3>Exercícios</h3>
+                <div class="item">
+                    <p>0/200</p>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="card-icon">
+                    <img src="livro-aberto.png" alt="ícone">
+                </div>
+                <h3>Simulados</h3>
+                <div class="item">
+                    <p>0/13</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+<main>
+    <section id="sobre" class="sobre-chatbot">
+        <div class="texto">
+            <h1>
+                Olá! Eu sou a Arar.IA
+                <br>vamos aprender algo
+                <br>novo hoje?
+            </h1>
+ 
+            <h3>
+                Domine inglês e português
+                <br>com nosso chatbot mascote
+            </h3>
+ 
+            <a href="https://typebot.co/recep-o-uqpz59j">
+                Comece a estudar, é dinâmico!
+            </a>
+        </div>
+ 
+        <div class="img-sobre">
+            <img src="arara-do-convite.png" alt="Imagem da Arar IA">
+        </div>
+ 
+    </section>
+ 
+    <section id="sobre" class="sobre-chatbot">
+        <div class="texto">
+            <h1>
+                Curiosa e inteligente, a Arar.IA
+                <br>te guia como o vento na
+                <br>floresta.
+            </h1>
+
+            <a href="#" id="login/cadastro">Confira, é só clicar!</a>
+
+                <div class="modal-overlay" id="modal-login">
+                    <div class="modal">
+                        <button class="fechar" id="fechar-modal">✕</button>
+
+                        <div class="modal-abas">
+                            <button class="aba ativa" id="aba-login">Entrar</button>
+                            <button class="aba" id="aba-cadastro">Cadastrar</button>
+                        </div>
+
+                        <div class="form-login">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Senha">
+                            <button class="btn-entrar">Entrar</button>
+                        </div>
+
+                        <div class="form-cadastro" style="display:none">
+                            <input type="text" placeholder="Nome completo">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Senha">
+                            <input type="password" placeholder="Confirmar senha">
+                            <button class="btn-entrar">Cadastrar</button>
+                        </div>
+
+                      </div>
+                </div>
+        </div>
+        <img src="Arar.IA.png" alt="Imagem da Arar.IA" class="imagem-ararIA">
+        <div class="visual-chatbot">
+            <img src="celular-chatbot.png" alt="imagem do chatbot celular" class="celular-chatbot">
+        </div>
+    </section>
+    
 </main>
-
-<footer>
-    <h4>Sobre nós 
-    <br> Somos uma plataforma de conteúdo focada em inglês e 
-    <br> português, criada para facilitar o acesso a informações claras,
-    <br> organizadas e úteis. Nosso objetivo é ajudar estudantes a 
-    <br> entender melhor os temas, revisar conteúdos e aprender de 
-    <br> forma simples e prática no dia a dia.</h4>
-
+ 
+<footer id="contato">
+    <h4> O caminho para sua aprendizagem ágil </h4>
+ 
     <div class="btn-redes">
-        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+        <a href="#"><img src="whatsapp-logo.png"></a>
+        <a href="#"><img src="instagram-logo.png"></a>
+        <a href="#"><img src="facebook-logo.png"></a>
     </div>
+
 </footer>
+ 
+<script src="script.js"></script>
 </body>
 </html>
